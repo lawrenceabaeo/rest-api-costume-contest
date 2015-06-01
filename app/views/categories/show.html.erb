@@ -10,5 +10,20 @@
   <%= @category.category_description %>
 </p>
 
+<h2>Entries:</h2>
+<p>
+  <% @entries.each do |entry| %>
+    <% if entry.person && (entry.person != "") %>
+      <%= entry.person %><br>
+    <% end %>
+    <% if entry.character && (entry.character != "") %>
+      <%= entry.character %><br>
+    <% end %>
+    <% if entry.title && (entry.title != "") %> 
+      <%= entry.title %> 
+    <% end %>
+  <% end %>
+</p>
+
 <%= link_to 'Edit', edit_category_path(@category) %> |
 <%= link_to 'Back', categories_path %>
