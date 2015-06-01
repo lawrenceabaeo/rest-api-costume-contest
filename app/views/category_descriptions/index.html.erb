@@ -1,0 +1,29 @@
+<h1>Listing category_descriptions</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @category_descriptions.each do |category_description| %>
+      <tr>
+        <td><%= category_description.name %></td>
+        <td><%= category_description.description %></td>
+        <td><%= link_to 'Show', category_description %></td>
+        <td><%= link_to 'Edit', edit_category_description_path(category_description) %></td>
+        <td><%= link_to 'Destroy', category_description, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Category description', new_category_description_path %>
