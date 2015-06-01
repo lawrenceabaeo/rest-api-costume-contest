@@ -1,4 +1,6 @@
 RestApiCostumeContest::Application.routes.draw do
+  resources :entries
+
   resources :categories
 
   resources :category_descriptions
