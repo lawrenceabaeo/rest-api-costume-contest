@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150601234940) do
+ActiveRecord::Schema.define(version: 20150601235238) do
 
   create_table "categories", force: true do |t|
     t.integer  "contest_id"
@@ -46,6 +46,7 @@ ActiveRecord::Schema.define(version: 20150601234940) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "title"
+    t.integer  "display_rank"
   end
 
   add_index "entries", ["category_id"], name: "index_entries_on_category_id"
