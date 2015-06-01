@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150601215840) do
+ActiveRecord::Schema.define(version: 20150601234940) do
 
   create_table "categories", force: true do |t|
     t.integer  "contest_id"
@@ -42,7 +42,6 @@ ActiveRecord::Schema.define(version: 20150601215840) do
   create_table "entries", force: true do |t|
     t.string   "person"
     t.string   "character"
-    t.integer  "rank"
     t.integer  "category_id"
     t.datetime "created_at"
     t.datetime "updated_at"
