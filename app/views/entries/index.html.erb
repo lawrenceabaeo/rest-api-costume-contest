@@ -3,6 +3,7 @@
 <table>
   <thead>
     <tr>
+      <th>Title</th>
       <th>Person</th>
       <th>Character</th>
       <th>Rank</th>
@@ -16,10 +17,11 @@
   <tbody>
     <% @entries.each do |entry| %>
       <tr>
+        <td><%= entry.title %></td>
         <td><%= entry.person %></td>
         <td><%= entry.character %></td>
         <td><%= entry.display_rank %></td>
-        <td><%= entry.category %></td>
+        <td><%= entry.category.id %></td>
         <td><%= link_to 'Show', entry %></td>
         <td><%= link_to 'Edit', edit_entry_path(entry) %></td>
         <td><%= link_to 'Destroy', entry, method: :delete, data: { confirm: 'Are you sure?' } %></td>

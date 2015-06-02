@@ -2,12 +2,14 @@
 
 <p>
   <strong>Contest:</strong>
-  <%= @category.contest %>
+  <%= @category.contest.id %>
+  <%= @category.contest.name %>
 </p>
 
 <p>
   <strong>Category description:</strong>
-  <%= @category.category_description %>
+  <%= @category.category_description.id %>
+  <%= @category.category_description.name %>
 </p>
 
 <h2>Entries:</h2>

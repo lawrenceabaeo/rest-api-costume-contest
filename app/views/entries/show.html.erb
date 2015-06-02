@@ -1,6 +1,11 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+  <strong>Title:</strong>
+  <%= @entry.title %>
+</p>
+
+<p>
   <strong>Person:</strong>
   <%= @entry.person %>
 </p>
@@ -17,7 +22,7 @@
 
 <p>
   <strong>Category:</strong>
-  <%= @entry.category %>
+  <%= @entry.category.id %>
 </p>
 
 <%= link_to 'Edit', edit_entry_path(@entry) %> |
