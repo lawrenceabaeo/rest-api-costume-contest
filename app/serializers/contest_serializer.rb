@@ -1,4 +1,4 @@
 class ContestSerializer < ActiveModel::Serializer
-  attributes :id, :name, :location, :contest_occurrence
+  attributes :id, :name, :description, :location, :contest_occurrence
   has_many :categories
 end
