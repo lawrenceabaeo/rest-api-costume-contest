@@ -4,7 +4,8 @@ module Api
       respond_to :json
 
       def index
-        respond_with Contest.all
+        # respond_with Contest.all
+        render json: Contest.all, each_serializer: ContestIndexSerializer
       end
       
       def show
