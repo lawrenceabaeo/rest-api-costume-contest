@@ -20,7 +20,7 @@ category_description = [
   ["Children’s Awards", "For those 12 and under"], 
   ["Judge's Awards", "Each judge may grant an award to an entry that they feel is exceptional."], 
   ["Single Awards", "Collection of Awards which have a single focus"], 
-  ["Open Division Awards", "This category is intended for costumers with novice to intermediate experience in making costumes. Those with basic formal training (such as crafting classes or entry-level college courses in costuming or fashion) will be permitted to compete in this division."], 
+  ["Open Division Awards", "This category is intended for costumers with novice to intermediate experience in making costumes. Those with basic formal training will be permitted to compete in this division."], 
   ["Advanced Division Awards", "The Advanced category is intended for people with advanced formal training in costuming or fashion, extensive experience in making costumes, or who have won several awards for costumes."], 
   ["Best in Show", "Top Award for the entire Convention"], 
   ["Master's Category", "For master cosplayers."], 
