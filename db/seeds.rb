@@ -115,5 +115,5 @@ entries = [
 ]
 
 entries.each do |title, person, character|
-  Entry.create(title: title, person: person, character: character, category: 1)
+  Entry.create(title: title, person: person, character: character, category: Category.find(1))
 end
