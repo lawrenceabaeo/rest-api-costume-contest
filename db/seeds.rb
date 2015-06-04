@@ -35,9 +35,7 @@ category_description.each do |name, description|
   CategoryDescription.create(name: name, description: description)
 end
 
-entries = [ 
-  ["2nd Place", "A Convention Attendee", "Gaige from Borderlands"]
-]
+entries = [["2nd Place", "A Convention Attendee", "Gaige from Borderlands"]]
 
 entries.each do |title, person, character|
   Entry.create(title: title, person: person, character: character)
