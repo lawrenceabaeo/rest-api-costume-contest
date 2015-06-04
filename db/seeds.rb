@@ -36,26 +36,7 @@ category_description.each do |name, description|
 end
 
 entries = [ 
-  ["2nd Place", "", "Gaige from Borderlands"],
-  ["1st Place", "", "Elsa From Frozen"],
-  ["Most Creative", "", "Sakizou Mermaid"],
-  ["Walkon Open #69", "Brothers Requiem Cosplay", "Death & Death the Kid from Soul Eater"],
-  ["Walkon Open #60", "Akito & Tish", "Ryuk from Death Note"],
-  ["Walkon Open #7", "The Green Family", "Dalek & Dr. Who"],
-  ["Walkon Open #17", "Sazh, Dajh and Mary Mumphrey", "Sazh & Dajh Katzroy from Final Fantasy 13"],
-  ["Judge Velours Requiem:Walkon Advanced #20", "Payton Schmall", "Death Knight from World of Warcraft"],
-  ["Judge Mindtailor:Walkon Open #71", "Josh", "Ho-Oh Centurion from Pokemon"],
-  ["Judge MegumiBish:Walkon Open #67", "Ulfbert, Star, Oliver, Uriah and Lucas", "Monster Hunters from Monster Hunter"],
-  ["Judge Cat from PirateKitty Crafts:Walkon Advanced #16", "Shinka Studios and Dugfinn Cosplay", "Raiden & Sunny from Metal Gear Rising: Revengeance"],
-  ["Judge Elin Winkler:Walkon Open #2", "Leila Nami", "Mink from Dragon Half"],
-  ["People’s Choice Award:Walkon Open #59", "Marieartcorner", "Jessica Rabbit from Who Framed Roger Rabbit"],
-  ["Best Prop Award:Walkon Open #14", "Jillian of JAMS Cosplay", "Dante from Dante’s Inferno"],
-  ["Best Non-Anime Award:Skit Advanced #2 “I Should Go”", "Evil Twins Cosplay", "Mass Effect"],
-  ["Best Skit Award:Skit Advanced #6- “The Empty Village”", "Forever Alone", "Cyrus from Animal Crossing New Leaf"],
-  ["Third Place:Walkon Open #3", "Patricia, Carolyn and Michele", "Hua, Bao, and Feng from Powerpuff Dynasty (original concept)"],
-  ["Second Place:Walkon Open #28", "Kyle, Taylor, Rissa and Megan", "Double, Painwheel, Regina and Black Dahlia from Skullgirls"],
-  ["Best in Show (For Division):Walkon Open #22", "Black Waltz 2 from Final Fantasy 9", "Silver Faction"],
-  ["Third Place Walkon Advanced #5", "Shouri Cosplay Troupe", "Princess Sakura, Syaoran and Fai D. Flowright from Tsubasa Reservoir Chronicle"]
+  ["2nd Place", "A Convention Attendee", "Gaige from Borderlands"]
 ]
 
 entries.each do |title, person, character|
