@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Rest-api-costume-contest by lawrenceabaeo</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Rest-api-costume-contest</h1>
+        <p>Rails REST API that gives clients costume contest results in json</p>
+
+        <p class="view"><a href="https://github.com/lawrenceabaeo/rest-api-costume-contest">View the Project on GitHub <small>lawrenceabaeo/rest-api-costume-contest</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/lawrenceabaeo/rest-api-costume-contest/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/lawrenceabaeo/rest-api-costume-contest/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/lawrenceabaeo/rest-api-costume-contest">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a id="rails-rest-api-that-gives-clients-costume-contest-results-in-json" class="anchor" href="#rails-rest-api-that-gives-clients-costume-contest-results-in-json" aria-hidden="true"><span class="octicon octicon-link"></span></a>Rails REST API that gives clients costume contest results in json</h1>
+
+<h2>
+<a id="what-is-this" class="anchor" href="#what-is-this" aria-hidden="true"><span class="octicon octicon-link"></span></a>What is this?</h2>
+
+<p>This limited REST API example-project gives clients costume contest results in json format. The backend is Ruby on Rails with help from the <a href="https://github.com/rails-api/active_model_serializers">active_model_serializers gem</a>. </p>
+
+<h2>
+<a id="endpoints" class="anchor" href="#endpoints" aria-hidden="true"><span class="octicon octicon-link"></span></a>Endpoints?</h2>
+
+<h3>
+<a id="three-endpoints" class="anchor" href="#three-endpoints" aria-hidden="true"><span class="octicon octicon-link"></span></a>Three endpoints:</h3>
+
+<ol>
+<li>get a list of contests</li>
+<li>get a single contest, with all of that contest’s categories, and with the entries for those categories</li>
+<li>get a single category from a contest, with the entries for that category</li>
+</ol>
+
+<h3>
+<a id="example-urls-as-viewed-in-a-web-browser-real-clients-would-leave-off-the-json-extension-and-ask-for-json-in-a-request-header" class="anchor" href="#example-urls-as-viewed-in-a-web-browser-real-clients-would-leave-off-the-json-extension-and-ask-for-json-in-a-request-header" aria-hidden="true"><span class="octicon octicon-link"></span></a>Example URLs (as viewed in a web browser, ‘real’ clients would leave off the .json extension and ask for json in a request header):</h3>
+
+<ul>
+<li><a href="http://rest-api-costume-contest.herokuapp.com/api/v1/contests.json">http://rest-api-costume-contest.herokuapp.com/api/v1/contests.json</a></li>
+<li><a href="http://rest-api-costume-contest.herokuapp.com/api/v1/contests/1.json">http://rest-api-costume-contest.herokuapp.com/api/v1/contests/1.json</a></li>
+<li><a href="http://rest-api-costume-contest.herokuapp.com/api/v1/contests/1/categories/1.json">http://rest-api-costume-contest.herokuapp.com/api/v1/contests/1/categories/1.json</a></li>
+</ul>
+
+<h2>
+<a id="why-did-i-make-this" class="anchor" href="#why-did-i-make-this" aria-hidden="true"><span class="octicon octicon-link"></span></a>Why did I make this?</h2>
+
+<p>This mini-project was an effort to learn to REST/API, and how that could be implemented and served from a Ruby on Rails backend.</p>
+
+<h2>
+<a id="what-technologyskills-were-learnedretrieved" class="anchor" href="#what-technologyskills-were-learnedretrieved" aria-hidden="true"><span class="octicon octicon-link"></span></a>What technology/skills were learned/retrieved?</h2>
+
+<ul>
+<li>REST and APIs (concepts, Rails implementation)</li>
+<li>Rails, associations (has many through), rails routing, namespacing, scaffolding, and the active_model_serializers gem</li>
+<li>json</li>
+</ul>
+
+<h2>
+<a id="why-make-an-api-about-costume-contest-results" class="anchor" href="#why-make-an-api-about-costume-contest-results" aria-hidden="true"><span class="octicon octicon-link"></span></a>Why make an API about costume contest results?</h2>
+
+<p>I wanted to do a costume contest app in a full blown Rails app, and this api project was a way to try the idea. After this, do I still want to make a full app? No - there is a limited audience, it’s more complex than I thought, and contest creators seem happy using blogs and tumblr to record and publish their contests.</p>
+
+<h2>
+<a id="limitations" class="anchor" href="#limitations" aria-hidden="true"><span class="octicon octicon-link"></span></a>Limitations:</h2>
+
+<ul>
+<li>No POST, DELETE or PUT actions. In my self-imposed time-constraint, implementing just the GET requests was challenging. In this rails app, the API and backend rails models are not 1 to 1. A 1 to 1 API may be appropriate in some apps, but in this case a meaningful API response for costume contest results involves assembling associated data from a variety of models. </li>
+<li>Another limitation is that this app does NOT have a meaningful front-end - this project was meant for serving a REST API.</li>
+</ul>
+
+<h2>
+<a id="what-more-could-be-explored" class="anchor" href="#what-more-could-be-explored" aria-hidden="true"><span class="octicon octicon-link"></span></a>What more could be explored?</h2>
+
+<ul>
+<li>Different REST verbs (this only does GET for now)</li>
+<li>Security and Authentication</li>
+<li>Compliance to jsonapi.org standards</li>
+<li>Error Handling</li>
+<li>Documentation</li>
+<li>Regression Tests</li>
+<li>Versioning - although this API has namespace versioning, a second version has not been implemented yet</li>
+<li>Client consumption</li>
+</ul>
+
+<h2>
+<a id="tech-references" class="anchor" href="#tech-references" aria-hidden="true"><span class="octicon octicon-link"></span></a>Tech references:</h2>
+
+<p>active_model_serializers gem:
+<a href="https://github.com/rails-api/active_model_serializers">https://github.com/rails-api/active_model_serializers</a></p>
+
+<p>RailsCast Episode about using active_model_serializer gem
+<a href="http://railscasts.com/episodes/409-active-model-serializers">http://railscasts.com/episodes/409-active-model-serializers</a></p>
+
+<p>RailsCast Episode about simple API versioning <a href="http://railscasts.com/episodes/350-rest-api-versioning">http://railscasts.com/episodes/350-rest-api-versioning</a></p>
+
+<p>Rails Routing Guide
+<a href="http://guides.rubyonrails.org/routing.html">http://guides.rubyonrails.org/routing.html</a></p>
+
+<p>Youtube, in particular:
+Building a web API with Ruby on Rails
+<a href="https://www.youtube.com/watch?v=36M2BSA2LYk">https://www.youtube.com/watch?v=36M2BSA2LYk</a></p>
+
+<h2>
+<a id="references" class="anchor" href="#references" aria-hidden="true"><span class="octicon octicon-link"></span></a>References:</h2>
+
+<h3>
+<a id="costume-contest-data" class="anchor" href="#costume-contest-data" aria-hidden="true"><span class="octicon octicon-link"></span></a>Costume Contest Data:</h3>
+
+<p>A-Kon 25 2014
+<a href="http://www.a-kon.com/?p=6675">http://www.a-kon.com/?p=6675</a></p>
+
+<p>Florida SuperCon 2014
+<a href="http://floridasupercon.com/2014-fsc-costume-contest-winners">http://floridasupercon.com/2014-fsc-costume-contest-winners</a></p>
+
+<p>Emerald City Comicon 2014 <a href="http://emeraldcitycomicon.tumblr.com/post/83655440535/here-are-the-winners-of-the-eccc-costume-contest">http://emeraldcitycomicon.tumblr.com/post/83655440535/here-are-the-winners-of-the-eccc-costume-contest</a></p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/lawrenceabaeo">lawrenceabaeo</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
