@@ -9,7 +9,8 @@ module Api
       end
       
       def show
-        respond_with Contest.find(params[:id])
+        # respond_with Contest.find(params[:id])
+        render json: Contest.find(params[:id])
       end
 
     end
