@@ -1,4 +1,0 @@
-Click below for this project's 'Github Pages', for more info:
-
-
-http://lawrenceabaeo.github.io/rest-api-costume-contest
