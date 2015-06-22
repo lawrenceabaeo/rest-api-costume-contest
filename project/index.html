@@ -1,0 +1,77 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/my-styles.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <script src="bower_components/jquery/dist/jquery.js"></script>
+        <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <div class="all">
+
+          <div class="row">
+            <div class="main col-md-8 col-md-offset-2">
+              <h2>Example of JSON REST (GET) API Data from Ruby on Rails Server</h2>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+              <div class="endpoints">
+
+                <div class="endpoint-area">
+                  <div class="endpoint-descrip">Get a list of contests</div>
+                  <div class="endpoint-input"><input type="button" id="contest-list-button" value="Click to view!"></div>
+                </div>
+
+                <div class="endpoint-area">
+                  <div class="endpoint-descrip">Get one contest, with that contest's categories and entries for those categories</div>
+                  <div class="endpoint-input"><input type="button" id="contest-one-button" value="Click to view!"></div>
+                </div>
+
+                <div class="endpoint-area">
+                  <div class="endpoint-descrip">Get one category from a contest, with entries for that category</div>
+                  <div class="endpoint-input"><input type="button" id="category-one-button" value="Click to view!"></div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+
+              <pre>
+                <div class="json-data">
+                  <div class='my-wrapper bar'>
+                  </div>
+                </div>
+              </pre>
+
+            </div>
+          </div>
+
+      </div>
+
+      <script src="js/plugins.js"></script>
+      <script src="js/main.js"></script>
+
+    </body>
+  </html>

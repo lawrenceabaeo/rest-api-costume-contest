@@ -1,0 +1,101 @@
+.main {
+}
+
+.json-data {
+}
+
+.endpoints {
+  display: table;
+  border: 1px solid gray;
+  border-collapse: collapse;
+}
+.endpoint-area {
+  display: table-row;
+  border: 1px solid gray;
+}
+.endpoint-descrip {
+  display: table-cell;
+  border: 1px solid gray;
+  padding: 5px 15px;
+}
+.endpoint-input {
+  display: table-cell;
+  border: 1px solid gray;
+  vertical-align: middle;
+  padding: 5px 15px;
+}
+
+.endpoint-uri {
+  color: #990000;
+  font-style: italic;
+}
+
+/* CSS for the pretty print came from here: 
+ * http://stackoverflow.com/questions/4810841/how-can-i-pretty-print-json-using-javascript
+ */
+pre {
+  outline: 1px solid #ccc;
+  padding: 0px 10px;
+  white-space: pre-wrap;
+}
+.string { color: green; }
+.number { color: darkorange; }
+.boolean { color: blue; }
+.null { color: magenta; }
+.key { color: red; }
+
+.all {
+  margin: 10px 15px;
+}
+
+.my-wrapper {
+  -webkit-animation-name: slide-from-top;
+          animation-name: slide-from-top;
+  -webkit-animation-duration: .5s;
+          animation-duration: .5s;
+}
+
+@-webkit-keyframes slide-from-top {
+  0% {
+    -webkit-transform: translate(0px, -1000px);
+            transform: translate(0px, -1000px);
+  }
+  100% {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+}
+
+@keyframes slide-from-top {
+  0% {
+    -webkit-transform: translate(0px, -1000px);
+            transform: translate(0px, -1000px);
+  }
+  100% {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+}
+
+/* Animation bar taken from:
+ * http://codepen.io/theSLY/pen/tcnjL
+ */
+.bar {
+  position: absolute;
+  margin: auto;
+  top: 0; bottom: 0; left: 0; right: 0;
+  width: 200px;
+  height: 30px;
+  overflow: hidden;
+  background-size:100px 100px;
+  background-image: linear-gradient(-45deg,
+  #990000 25%, #e0b2b2 25%,
+  #e0b2b2 50%, #990000 50%,
+  #990000 75%, #e0b2b2 75%);
+  animation: anim 1s linear infinite;
+}
+
+@keyframes anim {
+    0% { background-position: 0 0; }
+    100% { background-position: 50px 50px; }
+}

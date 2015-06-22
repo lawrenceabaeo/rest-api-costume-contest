@@ -1,0 +1,19 @@
+{
+  "name": "res000",
+  "version": "0.0.0",
+  "authors": [
+    "hoohah"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "1.11.3",
+    "bootstrap": "~3.3.5"
+  }
+}
