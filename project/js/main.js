@@ -17,7 +17,7 @@ $(document).ready(function() {
 });
 
 function changeIt(url) {
-  $("div.json-data").html("<div class='my-wrapper spinner large'></div>");
+  $("div.json-data").html("<div class='spinner'></div>");
   $.getJSON(url, function(data) {
     var prettied = syntaxHighlight(JSON.stringify(data, undefined, 4));
     $("div.json-data").html("<div class='my-wrapper'><p class='endpoint-uri'>Endpoint URI: " + url + "</p>" + prettied + '</div>');
