@@ -99,3 +99,39 @@ pre {
     0% { background-position: 0 0; }
     100% { background-position: 50px 50px; }
 }
+
+/* Code from:
+ * http://codepen.io/mgrubinger/pen/MYWQRx
+ * This one seems more safari friendly
+ */
+div.spinner {
+  height: 21px;
+  width: 21px;
+  margin: 20px auto;
+  border-radius: 50%;
+  /* border: dashed 1px #D0CE03; */
+  border: dashed 1px #990000;
+  -webkit-animation-name: loader-spin;
+  animation-name: loader-spin;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+div.spinner.large {
+  width: 43px;
+  height: 43px;
+  border-width: 3px;
+}
+@-webkit-keyframes loader-spin {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+to {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+}
