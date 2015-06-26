@@ -2,6 +2,8 @@
 }
 
 .json-data {
+  padding: 0px;
+  width: 100%;
 }
 
 .endpoints {
@@ -89,24 +91,20 @@ pre {
 
 .spinner {
   min-width: 24px;
-  min-height: 24px;
+  min-height: 72px;
+  margin-bottom: 0px;
 }
 
 .spinner:before {
-  content: 'Loading…';
   position: absolute;
-  /*
-  top: 50%;
-  left: 50%;
-  width: 16px;
-  height: 16px;
-  */
-  top: 30%;
-  left: 45%;
   width: 48px;
   height: 48px;
-  margin-top: -10px;
-  margin-left: -10px;
+  /* to position the spinner center:
+   * http://stackoverflow.com/questions/252856/center-align-on-a-absolutely-positioned-div
+   */
+  right: 0;
+  left: 0;
+  margin: 0 auto;
 }
 
 .spinner:not(:required):before {
@@ -116,4 +114,9 @@ pre {
   border-top-color: rgba(99, 0, 0, .8);
   animation: spinner .6s linear infinite;
   -webkit-animation: spinner .6s linear infinite;
+}
+
+div[class^="loading-"] {
+  display: none;
+  text-align: center;
 }
